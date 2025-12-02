@@ -1,0 +1,54 @@
+body {
+    font-family: "Segoe UI", sans-serif;
+    background: #faf5ff;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+    color: #333;
+}
+
+h1 {
+    font-size: 28px;
+    color: #aa0000;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+div {
+    margin-top: 25px;
+}
+
+/* カード画像 */
+.card {
+    width: 110px;
+    height: auto;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: transform 0.2s, box-shadow 0.2s;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.15);
+}
+
+/* ホバー時のアニメーション */
+.card:hover {
+    transform: scale(1.1) rotate(-2deg);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+/* カード一覧の配置 */
+div {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+/* 全体の余白調整 */
+body > * {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}

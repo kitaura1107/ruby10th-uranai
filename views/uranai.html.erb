@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="/CSS/uranai.css">
+    <title>Rubyビジネス推進協会10thタロット占い</title>
+  </head>
+  <body>
+    <h1>タロット占いへようこそ！</h1>
+    <p>ここでは今日のあなたの運勢を占います😀。。。。</p>
+    <p>好きなカードの選択をしてね！</p>
+
+    <div>
+      <% cards.shuffle.each_with_index do |img, i| %>
+        <a href="/result?card=<%= i %>">
+          <img class='card' src='/img/<%= img %>' width='100'>
+        </a>
+      <% end %>
+    </div>
+  </body>
+</html>
